@@ -8,10 +8,10 @@ export const mapSequential = (array, mapFunction) => {
 }
 
 export const mapSequentialAsync = (array, mapFunction) => {
-  return array.reduce(async (previousValue, currentValue) => {
+  return array.reduce(async (previousValue, currentValue, currentIndex) => {
     return [
       ...await previousValue,
-      await mapFunction(currentValue)
+      await mapFunction(currentValue, currentIndex, array)
     ]
   }, []);
 }
