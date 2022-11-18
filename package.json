@@ -1,0 +1,12 @@
+{
+  "name": "js-array-map-sequential",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
